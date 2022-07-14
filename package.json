@@ -1,24 +1,23 @@
 {
-  "name": "projeto",
-  "version": "0.0.0",
-  "private": true,
+  "name": "tarefas2",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "description": "",
+  "main": "app.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "cookie-parser": "^1.4.6",
-    "debug": "^4.3.4",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "firebase": "^9.8.4",
-    "http-errors": "^2.0.0",
-    "morgan": "^1.10.0",
     "pug": "^3.0.2"
   },
   "devDependencies": {
-    "admin-lte": "^3.2.0",
-    "eslint": "^8.18.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.26.0"
+    "nodemon": "^2.0.19"
   }
 }

@@ -1,0 +1,25 @@
+extends layout
+
+block body
+  div#login
+    h3.text-center.text-white.pt-5 Tarefas
+    div.container
+      div#login-row.row.justify-content-center.align-items-center
+        div#login-column.col-md-5
+          div#login-box.col-md-12.card
+            form#login-form.form(action="/register" method="post")
+              block tittle
+              div.form-group
+                block label1
+              div.form-group
+                block label2
+              div.form-group
+                block label3
+              div.form-group
+                block label4
+              div.form-group.center-row
+                block label5
+              div.form-group
+                block botoes
+              div.form-group.center-col
+                block footer

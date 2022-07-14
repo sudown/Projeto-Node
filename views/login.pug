@@ -1,0 +1,30 @@
+extends layout
+
+block body
+  div#login
+    h3.text-center.text-white.pt-5 Tarefas
+    div.container
+      div#login-row.row.justify-content-center.align-items-center
+        div#login-column.col-md-5
+          div#login-box.col-md-12.card
+            form#login-form.form(action="/login" method="post")
+              h3.text-center.text-info Login
+              div.form-group
+                br
+                input#email.form-control(type="email" name="email" placeholder="E-mail")
+              div.form-group
+                br
+                input#password.form-control(type="password" name="password" placeholder="Senha")
+              div.form-group.center-row
+                div
+                  input#remember-me(name="remember-me" type="checkbox")
+                  strong Lembre de mim
+                input.btn.btn-primary(type="submit")
+              div.form-group
+                a.btn.btn-danger.form-control(href="/google") Entrar com uma conta Google
+                br
+                br
+                a.btn.btn-secondary.form-control(href="/Microsoft") Entrar com uma conta Microsoft
+              div.form-group.center-col
+                a.alert-link(href="/solicitar-senha") Esqueci a minha senha
+                a.alert-link(href="/register") Criar uma nova conta
