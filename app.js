@@ -1,8 +1,8 @@
+require('dotenv').config();
 // Importação CommonJS modules
 const express = require('express');
 const path = require('path');
 const firebase = require('./services/firebase');
-require('dotenv').config();
 
 // Criar aplicação WEB express
 const app = express();
@@ -42,6 +42,18 @@ app.post('/register', (req, res) => {
 
 app.get('/solicitar-senha', (req, res) => {
   res.render('forgot-password')
+});
+
+app.post('/solicitar-senha', (req, res) => {
+  console.log("post solicitar senha");
+});
+
+app.get('/redefinir-senha', (req, res) => {
+  res.render('redefinir-senha');
+});
+
+app.post('/redefinir-senha', (req, res) => {
+  console.log(req.body);
 });
 
 app.get('/tarefas', (req, res) => {

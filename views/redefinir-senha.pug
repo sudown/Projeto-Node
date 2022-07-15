@@ -7,13 +7,17 @@ block body
       div#login-row.row.justify-content-center.align-items-center
         div#login-column.col-md-5
           div#login-box.col-md-12.card
-            form#login-form.form(action="/solicitar-senha" method="post")
-              h3.text-center.text-info Solicitar senha
+            form#login-form.form(action="/redefinir-senha" method="post")
+              h3.text-center.text-info Redefinir senha
               hr
-              p.text-center.text-info Você esqueceu sua senha? Aqui voce pode facilmente recuperar uma nova senha
+              p.text-center.text-info Você está apenas um passo de sua nova senha, recupere sua senha agora
               div.form-group
                 br
-                input#email.form-control(type="email" name="email" placeholder="E-mail")
+                input.form-control(type="password" name="password" placeholder="Senha")
+              div.form-group
+                br
+                input.form-control(type="password" name="confirmPassword" placeholder="Confirmar Senha")
+                br
               div.form-group.center-row
                 input.btn.btn-primary.form-control(type="submit" value="Solicitar uma nova senha")
               div.form-group.center-col

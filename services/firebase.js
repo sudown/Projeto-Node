@@ -49,7 +49,6 @@ function createUserWithEmailAndPassword(req, res){
     // Signed in
     const user = userCredential.user;
     res.send('Usuário criado com sucesso.');
-    res.redirect('/login')
     // Cadastra dados no BD // .doc().set() para dizer qual sera o id do documento // .add() para gerar id automaticamente
     db.collection("users").add({
       nome: nome,
