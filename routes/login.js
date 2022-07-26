@@ -1,6 +1,5 @@
 const express = require('express');
-const firebase = require('../services/firebase');
-
+const banco = require('../services/sql-server');
 const router = express.Router();
 
 router.get('/', (req, res) => {
@@ -8,9 +7,9 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
+  queryDatabase();
   console.log('efetuando login ...');
-  console.log(req.body);
-  firebase.signInWithEmailAndPassword(req, res);
+  
 });
 
 module.exports = router;

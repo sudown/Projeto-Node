@@ -1,5 +1,4 @@
 const express = require('express');
-const firebase = require('../services/firebase');
 
 const router = express.Router();
 
